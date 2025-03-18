@@ -1,4 +1,3 @@
-// Person class
 class Person {
   private _name: string;
   private _age: number;
