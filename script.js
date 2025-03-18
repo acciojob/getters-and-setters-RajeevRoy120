@@ -1,3 +1,4 @@
+// Person class
 class Person {
   private _name: string;
   private _age: number;
@@ -41,6 +42,10 @@ class Teacher extends Person {
     console.log(`${this.name} is teaching`);
   }
 }
+
+// Exporting for Node.js environment
+module.exports = { Person, Student, Teacher };
+
 
 // Do not change the code below this line
 window.Person = Person;
