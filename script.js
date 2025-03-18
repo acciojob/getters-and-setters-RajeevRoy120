@@ -1,6 +1,5 @@
-//complete this code
 class Person {
-	 private _name: string;
+  private _name: string;
   private _age: number;
 
   constructor(name: string, age: number) {
@@ -18,6 +17,11 @@ class Person {
     return this._age;
   }
 
+  // Setter for name
+  set name(name: string) {
+    this._name = name;
+  }
+
   // Setter for age
   set age(age: number) {
     this._age = age;
@@ -25,17 +29,16 @@ class Person {
 }
 
 class Student extends Person {
-	 study(): void {
+  study(): void {
     console.log(`${this.name} is studying`);
   }
 }
 
 class Teacher extends Person {
-	 teach(): void {
+  teach(): void {
     console.log(`${this.name} is teaching`);
   }
 }
-
 
 // Do not change the code below this line
 window.Person = Person;
