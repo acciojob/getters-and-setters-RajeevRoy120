@@ -1,3 +1,4 @@
+// Person class
 class Person {
   private _name: string;
   private _age: number;
@@ -12,14 +13,14 @@ class Person {
     return this._name;
   }
 
-  // Getter for age
-  get age(): number {
-    return this._age;
-  }
-
   // Setter for name
   set name(name: string) {
     this._name = name;
+  }
+
+  // Getter for age
+  get age(): number {
+    return this._age;
   }
 
   // Setter for age
@@ -28,12 +29,14 @@ class Person {
   }
 }
 
+// Student class
 class Student extends Person {
   study(): void {
     console.log(`${this.name} is studying`);
   }
 }
 
+// Teacher class
 class Teacher extends Person {
   teach(): void {
     console.log(`${this.name} is teaching`);
@@ -44,3 +47,4 @@ class Teacher extends Person {
 window.Person = Person;
 window.Student = Student;
 window.Teacher = Teacher;
+
